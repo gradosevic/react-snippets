@@ -8,3 +8,8 @@ cd my-app
 npm start
 ```
 For more info: https://create-react-app.dev/docs/getting-started
+
+
+## SEO
+
+Use HashRouter and React Helmet
