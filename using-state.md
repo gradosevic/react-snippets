@@ -29,7 +29,7 @@ class Counter extends Component{
     render(){
         return <div>
             <p>You clicked {this.state.count} times</p>
-            <button onClick={() => this.setState({count: count + 1})}>
+            <button onClick={() => this.setState({count: this.count + 1})}>
                 Click me
             </button>
         </div>;
