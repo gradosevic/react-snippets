@@ -66,7 +66,10 @@ import React, { Component } from 'react';
 
 class Animal extends Component{
     render(){
-        return <div>Hello from animal!</div>;
+        return <div>
+        <p>Hello from animal!</p>
+        {props.children} //adds content between tags sent from parent
+        </div>;
     }
 };
 
