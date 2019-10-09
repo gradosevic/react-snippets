@@ -1,29 +1,45 @@
 ```jsx
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 
-import Child from './Child';
+import Child from './components/Person/Person';
 
-function App() {
-  const children = [
-    {
-      name: 'Matt',
-      age: 12
-    },
-    {
-      name: 'Alice',
-      age: 6
+class Program extends Component {
+    state = {
+        children: [
+            {
+                name: 'Matt',
+                age: 12
+            },
+            {
+                name: 'Alice',
+                age: 6
+            }
+        ]
+    };
+    onRemoveHandler = (index)=>{
+        console.log('orm', index);
+        let children = this.state.children.splice(index, 1);
+        this.setState(children);
     }
-  ];
-  return (
-    <div className="App">
-      {children.map((child) => {
-        return <Child name={child.name} age={child.age} />;
-      })}
-    </div>
-  );
+    render(){
+        return (
+            <div>
+                {this.state.children.map((child, index) => {
+                    return <Child
+                        key={child.name}
+                        name={child.name}
+                        age={child.age}
+                        remove={()=>this.onRemoveHandler(index)}
+                        />;
+                })}
+            </div>
+        );
+    }
+
 }
 
-export default App;
+export default Program;
+
 
 ```
 
@@ -32,7 +48,7 @@ import React, { Component } from 'react';
 
 const Child = (props) =>{
     return <div>
-        <p><strong>Child name: {props.name}</strong></p>
+        <p onClick={props.remove}><strong>Child name: {props.name}</strong></p>
         <p>Age: {props.age}</p>
     </div>;
 }
