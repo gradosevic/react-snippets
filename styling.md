@@ -73,4 +73,9 @@ const style = {
     }
 }
 
+//Note: For media queries we need to wrap our app like this
+import Radium, { StyleRoot } from 'radium';
+return (
+    <StyleRoot><div className="App"></div></StyleRoot>;
+);
 ```
