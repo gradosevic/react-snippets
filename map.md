@@ -17,7 +17,8 @@ class Program extends Component {
         ]
     };
     onRemoveHandler = (index)=>{
-        let children = [...this.state.children]; //copy without changing original value
+        let children = [...this.state.children]; //copy without mutating original value
+        //use {...item} for objects, e.g. let child = {...this.state.children[index]}
         this.state.children.splice(index, 1);
         this.setState(children);
     }
