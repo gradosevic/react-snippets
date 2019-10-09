@@ -17,7 +17,6 @@ class Program extends Component {
         ]
     };
     onRemoveHandler = (index)=>{
-        console.log('orm', index);
         let children = this.state.children.splice(index, 1);
         this.setState(children);
     }
