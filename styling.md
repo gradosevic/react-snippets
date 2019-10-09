@@ -67,5 +67,10 @@ const style = {
     color: 'red',
     ':hover':{ //radium hover selector
         'color': 'blue'
+    },
+    '@media (min-width: 500px)': { //radium media queries
+        color: 'green'
     }
 }
+
+```
