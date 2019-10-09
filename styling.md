@@ -79,3 +79,7 @@ return (
     <StyleRoot><div className="App"></div></StyleRoot>;
 );
 ```
+
+## More...
+Check out CSS modules for more
+https://github.com/css-modules/css-modules
