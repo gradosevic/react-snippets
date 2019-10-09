@@ -19,7 +19,7 @@ export default Counter;
 ## Using state in class components
 
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 class Counter extends Component{
     state = {
