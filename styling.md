@@ -1,7 +1,7 @@
 ## External file styles
 Note: External styles are global. Make sure to add unique selectors
 
-###Child.js
+### Child.js
 ```jsx
 import React, { Component } from 'react';
 
@@ -41,4 +41,14 @@ const Child = (props) =>{
     </div>;
 }
 export default Child;
+```
+
+## Use CSS classess in array
+```jsx
+const classes = [];
+classes.push('red');
+classes.push('bold');
+return(
+    <div className={classess}
+);
 ```
