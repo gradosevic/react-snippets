@@ -83,3 +83,5 @@ return (
 ## More...
 Check out CSS modules for more
 https://github.com/css-modules/css-modules
+https://medium.com/nulogy/how-to-use-css-modules-with-create-react-app-9e44bec2b5c2
+https://github.com/css-modules/css-modules
