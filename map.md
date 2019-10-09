@@ -26,7 +26,8 @@ class Program extends Component {
             <div>
                 {this.state.children.map((child, index) => {
                     return <Child
-                        key={index}
+                        key={index} //Note: index is not the best solution since the whole list will be rerendered with
+                        //new indexes after update. Use custom id instead
                         name={child.name}
                         age={child.age}
                         remove={()=>this.onRemoveHandler(index)}
