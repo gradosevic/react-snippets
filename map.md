@@ -26,7 +26,7 @@ class Program extends Component {
             <div>
                 {this.state.children.map((child, index) => {
                     return <Child
-                        key={child.name}
+                        key={index}
                         name={child.name}
                         age={child.age}
                         remove={()=>this.onRemoveHandler(index)}
