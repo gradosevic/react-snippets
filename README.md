@@ -67,6 +67,7 @@ import React, { Component } from 'react';
 class Animal extends Component{
     constructor(props){
 	super(props);
+	//to set initial state based on props, use contructor
     }
     getDerivedStateFromProps(props, state){
 	//do not use it
