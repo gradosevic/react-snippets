@@ -102,3 +102,14 @@ class Animal extends Component{
 
 export default Animal;
 ```
+
+## Update lifecycle
+
+```jsx
+getDerivedStateFromProps(props, state)
+shouldComponentUpdate(nextProps, nextState) //we can cancel update process here!
+render()
+//update child components
+getSnapshotBeforeUpdate(prevProps, prevState)
+componentDidUpdate() //you can make http requests here, just don't update state!
+```
