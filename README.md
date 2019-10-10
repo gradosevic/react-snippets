@@ -71,7 +71,31 @@ class Animal extends Component{
         {props.children} //adds content between tags sent from parent
         </div>;
     }
-};
+    constructor(){
+	
+    }
+    getDerivedStateFromProps(){
+
+    }
+    getSnapshotBeforeUpdate(){
+
+    }
+    componentDidCatch(){
+
+    }
+    componentWillUnmount(){
+
+    }
+    shouldComponentUpdate(){
+
+    }
+    componentDidUpdate(){
+
+    }
+    componentDidMount(){
+
+    }
+}
 
 export default Animal;
 ```
