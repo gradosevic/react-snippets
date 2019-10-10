@@ -65,17 +65,22 @@ export default Person;
 import React, { Component } from 'react';
 
 class Animal extends Component{
+    constructor(){
+	
+    }
+    getDerivedStateFromProps(props, state){
+	//do not use it
+	//it could be useful in rear situations
+    }
     render(){
         return <div>
         <p>Hello from animal!</p>
         {props.children} //adds content between tags sent from parent
         </div>;
     }
-    constructor(){
-	
-    }
-    getDerivedStateFromProps(){
-
+    //rendered child components after render()
+    componentDidMount(){
+	//don't set state here
     }
     getSnapshotBeforeUpdate(){
 
@@ -92,10 +97,14 @@ class Animal extends Component{
     componentDidUpdate(){
 
     }
-    componentDidMount(){
-
-    }
+   
 }
 
 export default Animal;
+```
+
+## Component Lifecycle
+
+```jsx
+constructor(props) -> 
 ```
