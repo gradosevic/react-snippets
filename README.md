@@ -120,7 +120,10 @@ export default Animal;
 ```jsx
 getDerivedStateFromProps(props, state)
 shouldComponentUpdate(nextProps, nextState) //we can cancel update process here! (return false)
-//this can be useful if one sibling is changed, but not the other, check nextProps.obj vs this.props.obj are equal
+//this can be useful if one sibling is changed, but not the other, check nextProps.obj vs
+//this.props.obj are equal
+//Consider extending PureComponent instead of Component if you need to check all props 
+//if they're updated
 
 render()
 //update child components
