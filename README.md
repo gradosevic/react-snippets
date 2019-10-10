@@ -107,9 +107,16 @@ export default Animal;
 
 ```jsx
 getDerivedStateFromProps(props, state)
-shouldComponentUpdate(nextProps, nextState) //we can cancel update process here!
+shouldComponentUpdate(nextProps, nextState) //we can cancel update process here! (return false)
 render()
 //update child components
 getSnapshotBeforeUpdate(prevProps, prevState)
 componentDidUpdate() //you can make http requests here, just don't update state!
+
+//getSnapshotBeforeUpdate can pass some data to componentDidUpdate, e.g.
+getSnapshotBeforeUpdate(prevProps, prevState){
+	return {message: "m"};
+}
+componentDidUpdate(prevProps, prevState, snapshot);
+
 ```
