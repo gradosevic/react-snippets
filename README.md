@@ -97,14 +97,7 @@ class Animal extends Component{
     componentDidUpdate(){
 
     }
-   
 }
 
 export default Animal;
-```
-
-## Component Lifecycle
-
-```jsx
-constructor(props) -> 
 ```
