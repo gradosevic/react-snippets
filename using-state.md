@@ -37,3 +37,14 @@ class Counter extends Component{
 }
 export default Counter;
 ```
+
+### A better way to update state
+
+```jsx
+this.setState((prevState, props) => {
+	return {
+		persons: persons,
+		count: prevState.count + 1
+	}
+});
+```
