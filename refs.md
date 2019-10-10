@@ -1,4 +1,4 @@
-## Using refs
+## Using refs in class-based Components
 ```jsx
 import React from 'react';
 
@@ -21,4 +21,24 @@ class Counter extends Component{
     }
 }
 export default Counter;
+```
+
+## Using refs in functional components
+
+```jsx
+import React, {useEffect, useRef} from 'react';
+
+const counter = (props) => {
+    
+    const toggleBtnRef = useRef(null);
+    
+    useEffect(() => {
+        toggleBtnRef.current.click();
+    },[]);
+    
+    return(
+        <button ref={toggleBtnRef} />
+    );
+};
+export default counter;
 ```
