@@ -137,3 +137,11 @@ getSnapshotBeforeUpdate(prevProps, prevState){
 componentDidUpdate(prevProps, prevState, snapshot);
 
 ```
+
+## Other
+
+```jsx
+//Spread operator
+//turns {...props} e.g. {name: "Tom"} to name="Tom"
+<div {...props} />
+```
