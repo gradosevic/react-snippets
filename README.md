@@ -51,6 +51,9 @@ const Person = (props) =>{
         // Update the document title using the browser API
         document.title = `You clicked ${count} times`;
     });
+    useEffect(() => {
+        //Limit calls to only when persons change
+    }, [props.persons]);
 
     return <div>
         <span>This is Person component.</span>
