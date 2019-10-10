@@ -65,8 +65,8 @@ export default Person;
 import React, { Component } from 'react';
 
 class Animal extends Component{
-    constructor(){
-	
+    constructor(props){
+	super(props);
     }
     getDerivedStateFromProps(props, state){
 	//do not use it
