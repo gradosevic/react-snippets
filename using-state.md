@@ -49,6 +49,7 @@ this.setState((prevState, props) => {
 });
 ```
 ```jsx
-const options = [...this.state.options];
+//immutable way of updating state
+const options = {...this.state.options};
 options[something] = newValue;
 ```
