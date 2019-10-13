@@ -48,3 +48,7 @@ this.setState((prevState, props) => {
 	}
 });
 ```
+```jsx
+const options = [...this.state.options];
+options[something] = newValue;
+```
