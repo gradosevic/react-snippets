@@ -1,6 +1,7 @@
 ```jsx
 import React from 'react';
 
+//Relative path will be correctly resolved when using it this way
 import logo from '../../logo.png';
 
 const logo (props) => (
