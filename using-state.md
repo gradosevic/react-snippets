@@ -53,3 +53,9 @@ this.setState((prevState, props) => {
 const options = {...this.state.options};
 options[something] = newValue;
 ```
+### Set a new state in dependance of the old state
+```jsx
+this.setState((prevState) => {
+	return {something: !prevState};
+});
+```
