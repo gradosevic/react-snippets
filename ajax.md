@@ -38,7 +38,7 @@ axios.interceptors.response.use(response => {
 ### Setting global configuration
 
 ```jsx
-axios.defaults.baseUrl = 'http://example.com';
+axios.defaults.baseURL = 'http://example.com';
 axios.defaults.headers.common[Authorization] = 'api token';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
