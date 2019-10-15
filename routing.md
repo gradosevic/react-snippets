@@ -12,6 +12,9 @@ ReactDOM.render(
     <BrowserRouter>
         <App />
     </BrowserRouter>, document.getElementById('root'));
+    
+// set the base url
+<BrowserRouter basename="/my-app">
 ```
 
 ### Links
