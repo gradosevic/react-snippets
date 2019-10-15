@@ -47,6 +47,9 @@ import { Route, Link, NavLink, Switch, Redirect } from 'react-router-dom';
 
 //Nested routes, use first part dynamically e.g. /posts/id, /old-posts/id
 <Route path={this.props.match.url + '/:id'} exact component={ExampleComponent} />
+
+//404, catch all unrecognized routes
+<Route render={() => <h1>Not found</h1>} />
 ```
 
 ### Search Query
@@ -76,4 +79,7 @@ if(this.state.submitted){
 ...
 //Use in render method
 {redirect}
+
+//Alternative way
+this.props.history.replace('/posts');
 ```
