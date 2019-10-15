@@ -34,7 +34,7 @@ import { Route, Link, NavLink } from 'react-router-dom';
 </ul>
 ```
 
-### Components
+### Content & Components
 
 ```jsx
 <Route path="/" exact component={ExampleComponent} />
