@@ -43,3 +43,14 @@ axios.defaults.headers.common[Authorization] = 'api token';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 ```
+
+### Create a new instance of axios with custom configuration
+
+```jsx
+import axios from 'axios';
+
+const insteance = axios.create({
+    baseUrl: 'https://example-endpooint.com/'
+});
+
+export default instance;
