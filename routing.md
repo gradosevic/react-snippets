@@ -39,3 +39,10 @@ ReactDOM.render(
 <Route path="/relative" >Relative page</Route>
 <Route path="/:id" exact component={ExampleComponent} />
 ```
+
+### Search Query
+
+```jsx
+<Link to="/my-path?start=5">Go to Start</Link>
+//get it like props.location.search
+```
