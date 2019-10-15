@@ -44,6 +44,9 @@ import { Route, Link, NavLink, Switch } from 'react-router-dom';
     <Route path="/something" exact component={ExampleComponent} />
     <Route path="/:id" exact component={ExampleComponent} />
 </Switch>
+
+//Nested routes, use first part dynamically e.g. /posts/id, /old-posts/id
+<Route path={this.props.match.url + '/:id'} exact component={ExampleComponent} />
 ```
 
 ### Search Query
