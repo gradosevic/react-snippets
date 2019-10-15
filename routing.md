@@ -17,7 +17,7 @@ ReactDOM.render(
 ### Links
 
 ```jsx
-import { Route, Link, NavLink, Switch } from 'react-router-dom';
+import { Route, Link, NavLink, Switch, Redirect } from 'react-router-dom';
 ...
 <ul>
     <li>
@@ -62,4 +62,18 @@ componentDidMount() {
         console.log(param); // yields ['start', '5']
     }
 }
+```
+
+### Redirect
+
+```jsx
+<Redirect from="/" to="/posts" />
+
+//conditionaly
+if(this.state.submitted){
+    redirect = <Redirect to="/posts" />
+}
+...
+//Use in render method
+{redirect}
 ```
