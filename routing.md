@@ -45,8 +45,8 @@ ReactDOM.render(
 ```jsx
 <Link to="/my-path?start=5">Go to Start</Link>
 //get it from props.location.search. this will return e.g. start=5
-//to get the param use this snippet
 
+//to get the param use this snippet
 componentDidMount() {
     const query = new URLSearchParams(this.props.location.search);
     for (let param of query.entries()) {
