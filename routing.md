@@ -17,7 +17,7 @@ ReactDOM.render(
 ### Links
 
 ```jsx
-import { Route, Link, NavLink } from 'react-router-dom';
+import { Route, Link, NavLink, Switch } from 'react-router-dom';
 ...
 <ul>
     <li>
@@ -40,6 +40,10 @@ import { Route, Link, NavLink } from 'react-router-dom';
 <Route path="/" exact component={ExampleComponent} />
 <Route path="/relative" >Relative page</Route>
 <Route path="/:id" exact component={ExampleComponent} />
+<Switch>//Use Switch when there are multiple route matches. only first matched will be used
+    <Route path="/something" exact component={ExampleComponent} />
+    <Route path="/:id" exact component={ExampleComponent} />
+</Switch>
 ```
 
 ### Search Query
