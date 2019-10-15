@@ -17,6 +17,8 @@ ReactDOM.render(
 ### Links
 
 ```jsx
+import { Route, Link, NavLink } from 'react-router-dom';
+...
 <ul>
     <li>
         <NavLink to="/">Home</NavLink>
