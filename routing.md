@@ -86,3 +86,10 @@ if(this.state.submitted){
 //Alternative way
 this.props.history.replace('/posts');
 ```
+
+### withRouter
+Use withRouter to expand the props object with some routing data. Just wrap the app
+```jsx
+import {withRouter} from 'react-router-dom';
+export default withRouter(myComponent);
+```
