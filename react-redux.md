@@ -18,9 +18,9 @@ ReactDOM.render(
     <Provider store={store}>
         <App />
     </Provider>, document.getElementById('root'));
-
-//////////////////////////////////////////////////
-//In ./store/reducer.js
+```
+## Example /store/reducer.js
+```jsx
 const inititalState = {
   counter: 0
 };
@@ -34,7 +34,10 @@ const reducer = (state = inititalState, action) => {
   return state;
 }
 export default reducer;
-//////////////////////////////////////////////////
+```
+
+## Example Counter.js container
+```jsx
 //In container component
 import { connect } from 'react-redux';
 
