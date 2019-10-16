@@ -61,7 +61,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProp = dispatch => {
   return {
-    onIncrementCounter: dispatch({type: 'INCREMENT'}) 
+    onIncrementCounter: () => dispatch({type: 'INCREMENT'}) 
   };
 }
 
