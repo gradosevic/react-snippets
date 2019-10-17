@@ -76,5 +76,21 @@ export default connect(mapStateToProps, mapDispatchToProp)(Counter);
 
 ```
 
+## Updating immutable
+```jsx
+//Updating an array e.g. results = []
+const id = 2;
+newArray = [...state.results];
+newArray.splice(id, 1);
+return {
+    ...state,
+    results: newArray
+}
 
+//make a copy using filter 
+const newArrayCopy = state.results.filter(result => true);
+const filteredArray = state.results.filter((result, index) => index !== id);
 
+```
+for more:
+https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns
