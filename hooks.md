@@ -27,11 +27,15 @@ const exampleComponent = (props) => {
       ...prevTitle,
       {id: Math.random().toString(), ...ingredient}
     ])
-  }
+  const deleteSomethingHandler = ingredeintId => {
+    setEnteredTitle(prevengridients => prevengridients.filter(ingredient => {
+      ingredient.id !== ingredeintId
+    }));
+  };
   return {
     <div>
-      <Component addSomething={addSomethingHandler}
-      }}/>
+      <Component addSomething={addSomethingHandler} />
+      <Component deleteSomething={deleteSomethingHandler} />
     </div>
   };
 }
