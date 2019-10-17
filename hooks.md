@@ -41,3 +41,7 @@ const exampleComponent = (props) => {
 }
 export default exampleComponent;
 ```
+## useEffect()
+```jsx
+
+```
