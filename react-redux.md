@@ -94,3 +94,20 @@ const filteredArray = state.results.filter((result, index) => index !== id);
 ```
 for more:
 https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns
+
+### Extracted action types
+## actions.js
+```jsx
+export const INCREMENT = 'INCREMENT';
+export const DECREMENT = 'DECREMENT';
+
+```
+
+## Action consumer
+```jsx 
+import * as actionTypes from './actions'
+
+switch(action):
+    case actionTypes.INCREMENT
+        //do stuff
+```
