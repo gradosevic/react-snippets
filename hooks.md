@@ -1,6 +1,7 @@
+## useState()
 ```jsx
 import React, { useState } from 'react';
-```
+
 const exampleComponent = (props) => {
   const [ enteredTitle, setEnteredTitle ] = useState('');
   const [ enteredAmount, setEnteredAmount ] = useState('');
@@ -13,3 +14,4 @@ const exampleComponent = (props) => {
   };
 }
 export default exampleComponent;
+```
