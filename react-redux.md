@@ -31,6 +31,12 @@ const reducer = (state = inititalState, action) => {
       counter: state.counter+1
     }
   }
+  if(action.type === 'MULTIPLY_COUNTER'){
+        return {
+            ...state,
+            count: (state.count * action.by)
+        }
+    }
   return state;
 }
 export default reducer;
@@ -61,7 +67,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProp = dispatch => {
   return {
-    onIncrementCounter: () => dispatch({type: 'INCREMENT'}) 
+    onIncrementCounter: () => dispatch({type: 'INCREMENT'}),
+    multiplyBy: () => dispatch({type: 'MULTIPLY_COUNTER', by: 10})
   };
 }
 
