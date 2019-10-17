@@ -15,3 +15,25 @@ const exampleComponent = (props) => {
 }
 export default exampleComponent;
 ```
+### handler
+```jsx
+import React, { useState } from 'react';
+
+const exampleComponent = (props) => {
+  const [ enteredTitle, setEnteredTitle ] = useState('');
+
+  const addSomethingHandler = ingredient => {
+    setEnteredTitle(prevTitle => [
+      ...prevTitle,
+      {id: Math.random().toString(), ...ingredient}
+    ])
+  }
+  return {
+    <div>
+      <Component addSomething={addSomethingHandler}
+      }}/>
+    </div>
+  };
+}
+export default exampleComponent;
+```
