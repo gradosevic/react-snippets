@@ -100,3 +100,21 @@ const [userIngredients, dispatch] = useReducer(ingredientReducer, []);
 //in code
 dispatch({type: 'DELETE', id: ingredient.id});
 ```
+
+## useCallback()
+
+```jsx
+//use to prevent multiple rendering. just wrap out the code with 
+useCallback((//code), []);
+```
+
+## useContext()
+
+```jsx
+const authContext = useContext(AuthContext);
+```
+
+## useMemo()
+```jsx
+//TBD
+```
