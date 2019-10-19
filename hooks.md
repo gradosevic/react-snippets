@@ -80,3 +80,23 @@ return(
 );
 
 ```
+## useReducer()
+
+```jsx
+const ingredientReducer = (currentIngredients, action) {
+  switch (action.type) {
+    case 'SET':
+      return action.ingredients;
+    case 'ADD':
+      return [...currentIngredients, action.ingredients];
+    case 'DELETE':
+      return currentIngredients.filter(ing => ing.id !== action.id);
+    default:
+      throw new Exception('not allowed');
+  }
+};
+const [userIngredients, dispatch] = useReducer(ingredientReducer, []);
+
+//in code
+dispatch({type: 'DELETE', id: ingredient.id});
+```
