@@ -40,3 +40,5 @@ store.dispatch({type: 'ADD_COUNTER', value: 10});
 
 console.log('state',store.getState());
 ```
+## Immutable state
+https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns
