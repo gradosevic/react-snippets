@@ -70,3 +70,13 @@ const Person = (props) =>{
 }
 export default Person;
 ```
+## useRef()
+
+```jsx
+const inputRef = useRef();
+//inputRef.current.value
+return(
+  <input ref={inputRef} />
+);
+
+```
